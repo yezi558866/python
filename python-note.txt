@@ -1,0 +1,27 @@
+变量：只能用字母和“_”
+%s 取变量值，后面跟 %变量名。
+输入变量：raw_input()
+判断变量类型：type()
+输入变量raw_input()的type类型为str。
+转换为int类型，则：int(变量名)
+打印颜色：\33[32m------\33[0m
+范围表示：range(1,50)
+if：条件判断
+for：循环
+while：循环
+break：终止语句，满足条件退出循环操作。
+continue：满足条件继续进行循环。
+def sayhi()：定义函数用def。
+import os：引用系统模块
+from os import *: 导入os模块内所有。
+help(os.system)：查看帮助。
+os.system('ls'):调用系统命令列出当前目录内容。
+模块：当前目录下.py就可以当做模块。
+python数据结构：列表、元组、字典。
+列表：有序项目的数据结构。shoplist = ['apple', 'mango', 'carrot', 'banana']
+元组：
+字典：
+
+
+
+方法、模块、对象
