@@ -20,3 +20,8 @@ print('\033[32m****************************\033[0m')
 d = sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower)
 print(d)
 print('\033[32m****************************\033[0m')
+
+#忽略大小写且反向排序:
+e = sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True)
+print(e)
+print('\033[32m****************************\033[0m')
