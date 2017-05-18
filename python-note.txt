@@ -70,3 +70,15 @@ try/except/else/finally:
 StringIO_BytesIO:
 	--StringIO在内存中读写str。
 	--BytesIO在内存中读写bytes。
+序列化：
+	--把变量从内存变成可存储或传输的过程成为序列化。
+	--import pinkle
+	--pickle.dumps()把任意对象序列换成一个bytes，就可以写入文件。
+	--pickle.dump()直接把对象序列化后写入file-like Object。
+	--pickle.loads()反序列化，把对象从磁盘读入内存时，先把内容读到一个bytes。
+	--pickle.load()直接从一个file-like Object中直接反序列化出对象。
+JSON：
+	--import json
+	--dict对象可以序列化为JSON的{}
+	--json.dumps(class, default=lambda obj: obj.__dict__) 类实例序列化为json
+	--json.loads(json_str, object_hook=dict2class) json反序列化为类实例对象
