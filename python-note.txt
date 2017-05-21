@@ -82,3 +82,37 @@ JSON：
 	--dict对象可以序列化为JSON的{}
 	--json.dumps(class, default=lambda obj: obj.__dict__) 类实例序列化为json
 	--json.loads(json_str, object_hook=dict2class) json反序列化为类实例对象
+Process:
+	--from multiprocessing import Process
+	--Process类代表一个进程对象
+	--p = Process(target=run_proc, args=('test',))
+	--p.start()
+	--p.join()
+Pool:
+	--from multiprocessing import Pool
+	--如果需要大量的子进程，可通过进程池的方式批量创建子进程。
+	--p = Pool(4)
+	--p.apply_async(long_time_task, args=(i,))
+	--p.close()
+	--p.join()
+subprocess:
+	--创建子进程，且控制子进程输入输出。
+	--import subprocess
+	--r = subprocess.call(['nslookup', 'www.python.org'])
+	--控制输入输出：
+	p = subprocess.Popen(['nslookup'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	--output, err = p.communicate(b'set q=mx\npython.org\nexit\n')
+	--print(output.decode('utf-8'))
+	--print('Exit code:', p.returncode)
+Queue：
+	--实现进程间通信。
+	--from multiprocessing import Queue
+	--q = Queue()
+	--pw = Process(target=write, args=(q,))
+	--pr = Process(target=read, args=(q,))
+	--pw.start()
+	--q.put(value)
+	--pr.start()
+	--q.get(True)
+	--pw.join()
+	--pr.terminate()
