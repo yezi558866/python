@@ -116,3 +116,11 @@ Queue：
 	--q.get(True)
 	--pw.join()
 	--pr.terminate()
+threading:
+	--启动一个线程就是把一个函数传入并创建Thread实例，然后调用start()开始执行。
+	--import threading
+	--任何进程默认都会启动一个线程，我们称之为主线程，主线程又可以启动新的线程，主线程名字MainThread。
+	--threading模块的current_thread()函数，返回当前线程的实例。
+	--创建一个锁，lock = threading.Lock()
+	--获取锁，lock.acquire()
+	--释放锁，lock.release()
