@@ -1,1 +1,24 @@
-{"last": "20170609"}
+{
+    "Openfile": [
+        {
+            "filename": "testOpenFile.doc", 
+            "windowName": "testOpenFile.doc - WPS 文字 - 兼容模式"
+        }, 
+        {
+            "filename": "testOpenFile.txt", 
+            "windowName": "testOpenFile.txt (~/source/dapps/data) - gedit"
+        }
+    ], 
+    "OpenFileByApp": [
+        {
+            "filename": "testOpenFile.doc", 
+            "windowName": "testOpenFile.doc - WPS 文字 - 兼容模式", 
+            "appName": "/usr/share/applications/wps-office-wps.desktop"
+        }, 
+        {
+            "filename": "testOpenFile.txt", 
+            "windowName": "testOpenFile.txt (~/source/dapps/data) - gedit", 
+            "appName": "org.gnome.gedit.desktop"
+        }
+    ]
+}
